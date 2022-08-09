@@ -1,0 +1,24 @@
+{
+  "name": "restaurantpage",
+  "version": "1.0.0",
+  "description": "practice using webpack bundler and building modules",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config prod.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cdubspence/restaurantPage.git"
+  },
+  "author": "Casey Spence",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cdubspence/restaurantPage/issues"
+  },
+  "homepage": "https://github.com/cdubspence/restaurantPage#readme",
+  "devDependencies": {
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0"
+  }
+}
