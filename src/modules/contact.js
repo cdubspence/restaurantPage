@@ -1,6 +1,16 @@
-function loadContactPage() {
+(function loadContactPage() {
     const content = document.getElementById('content');
-    content.innerHTML = "<h1> THis is contact.js</h1>"
-}
+
+    const contact = document.createElement('div');
+    contact.innerHTML = `<div class='contact'>
+    <h1 class='title'>We want to hear from you!</h1>
+    <form>
+    Name: <input type='text'>
+    Email: <input type='email'>
+    Comments: <input type='textarea'>
+    </form>`
+
+    content.appendChild(contact);
+})();
 
 export default loadContactPage;

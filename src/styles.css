@@ -1,8 +1,38 @@
 body {
     margin: 0;
-    background-color: whitesmoke;
+    background-color: #8cacbc;
 }
 #content {
-    margin: 100px 50px 20px 50px;
+    margin: 0 200px 20px 200px;
     background-color: steelblue;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    border-radius: 20px;
+}
+
+.header {
+    margin-right: 20px;
+    grid-column: 1 / 4;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+
+}
+.navButtons {
+    background-color: steelblue;
+    border: none;
+    color: #def0fb;
+    border-radius: 20px;
+    font-size: 1.5rem;
+    grid-row: 2;
+    grid-column: 3;
+    width: 75px;
+}
+
+.navButtons:hover {
+    cursor: pointer;
+    color: steelblue;
+    background-color: #def0fb;
 }
