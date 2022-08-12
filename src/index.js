@@ -11,7 +11,7 @@ const content = document.getElementById('content');
 const buttons = document.querySelectorAll('.navButtons');
 
 buttons.forEach(button => button.addEventListener('click', () => {
-    content.innerHTML = '';
+    content.innerHTML = '';//TODO: THis is destroying our event listeners after first click
     pageLoad();
     if(button.getAttribute('id') == 'homeBtn') {
         console.log(button.getAttribute('id'))
