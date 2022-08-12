@@ -1,13 +1,19 @@
-(function loadMenuPage() {
+function loadMenuPage() {
     const content = document.getElementById('content');
 
     const menu = document.createElement('div');
-    menu.innerHTML = `<div class='about'>
-    <h1 class='title'>About Us</h1>
-    <p>This is something unique about us and why we think
-    eating at our place is better than eating anywher else in the world</p>`
+    menu.className = 'menu'
+    menu.innerHTML = `
+    <h1 class='title'>Menu</h1>
+    <ul>
+        <li> Sushi </li>
+        <li> Pizza </li>
+        <li> Sammys </li>
+        <li> Hot doggies </li>
+    </ul>`
 
+    
     content.appendChild(menu);
-})();
+};
 
 export default loadMenuPage;

@@ -20,6 +20,11 @@ body {
     align-items: center;
 
 }
+
+.header > h1 {
+    margin-right: 100px;
+}
+
 .navButtons {
     background-color: steelblue;
     border: none;
@@ -35,4 +40,9 @@ body {
     cursor: pointer;
     color: steelblue;
     background-color: #def0fb;
+}
+
+.home {
+    text-align: center;
+    grid-column: 2 / 3;
 }

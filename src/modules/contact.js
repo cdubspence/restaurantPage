@@ -1,8 +1,9 @@
-(function loadContactPage() {
+function loadContactPage() {
     const content = document.getElementById('content');
 
     const contact = document.createElement('div');
-    contact.innerHTML = `<div class='contact'>
+    contact.className = 'contact;'
+    contact.innerHTML = `
     <h1 class='title'>We want to hear from you!</h1>
     <form>
     Name: <input type='text'>
@@ -11,6 +12,6 @@
     </form>`
 
     content.appendChild(contact);
-})();
+};
 
 export default loadContactPage;
