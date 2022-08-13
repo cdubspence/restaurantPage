@@ -21,7 +21,7 @@ function ButtonFactory(id, classname, text) {
     button.id = id;
     button.className = classname;
     button.textContent = text;
-    button.onclick = pageLoad(id);
+    button.addEventListener('click', function() {pageLoad(id)});
     return button;
     
 }

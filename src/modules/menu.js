@@ -1,6 +1,6 @@
 export function loadMenuPage() {
     const content = document.getElementById('content');
-
+    
     const menu = document.createElement('div');
     menu.className = 'menu'
     menu.innerHTML = `

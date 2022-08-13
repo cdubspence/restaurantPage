@@ -1,8 +1,6 @@
-import pageLoad from "./pageLoad";
-
 export function loadHomePage() {
     const content = document.getElementById('content');
-
+    
     const home = document.createElement('div');
     home.className = 'home';
     home.innerHTML = `

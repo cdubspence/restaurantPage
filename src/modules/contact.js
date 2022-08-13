@@ -1,6 +1,6 @@
 export function loadContactPage() {
     const content = document.getElementById('content');
-
+    
     const contact = document.createElement('div');
     contact.className = 'contact;'
     contact.innerHTML = `
@@ -10,6 +10,6 @@ export function loadContactPage() {
     Email: <input type='email'>
     Comments: <input type='textarea'>
     </form>`
-
+    
     content.appendChild(contact);
 };
