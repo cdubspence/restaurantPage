@@ -120,13 +120,23 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sty
 
 /***/ }),
 
+/***/ "./src/modules/contact.js":
+/*!********************************!*\
+  !*** ./src/modules/contact.js ***!
+  \********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"loadContactPage\": () => (/* binding */ loadContactPage)\n/* harmony export */ });\nfunction loadContactPage() {\r\n    const content = document.getElementById('content');\r\n    \r\n    const contact = document.createElement('div');\r\n    contact.className = 'contact;'\r\n    contact.innerHTML = `\r\n    <h1 class='title'>We want to hear from you!</h1>\r\n    <form>\r\n    Name: <input type='text'>\r\n    Email: <input type='email'>\r\n    Comments: <input type='textarea'>\r\n    </form>`\r\n    \r\n    content.appendChild(contact);\r\n};\r\n\n\n//# sourceURL=webpack://restaurantpage/./src/modules/contact.js?");
+
+/***/ }),
+
 /***/ "./src/modules/createNav.js":
 /*!**********************************!*\
   !*** ./src/modules/createNav.js ***!
   \**********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"createNavBar\": () => (/* binding */ createNavBar)\n/* harmony export */ });\n/* harmony import */ var _pageLoad__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./pageLoad */ \"./src/modules/pageLoad.js\");\n\r\n\r\nfunction createNavBar() {\r\n    const content = document.getElementById('content');\r\n    const nav = document.createElement('div');\r\n    nav.classList.add('header');\r\n\r\n    const navButtonHome = ButtonFactory('homeBtn', 'navButtons', 'Home')\r\n    const navButtonMenu = ButtonFactory('menuBtn', 'navButtons', 'Menu')\r\n    const navButtonContact = ButtonFactory('contactBtn', 'navButtons', 'Contact');\r\n\r\n    nav.appendChild(navButtonHome);\r\n    nav.appendChild(navButtonMenu);\r\n    nav.appendChild(navButtonContact);\r\n\r\n    content.appendChild(nav);\r\n}\r\n\r\nfunction ButtonFactory(id, classname, text) { \r\n    var button = document.createElement('button');\r\n    button.id = id;\r\n    button.className = classname;\r\n    button.textContent = text;\r\n    button.onclick = (0,_pageLoad__WEBPACK_IMPORTED_MODULE_0__.pageLoad)(id);\r\n    return button;\r\n    \r\n}\n\n//# sourceURL=webpack://restaurantpage/./src/modules/createNav.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"createNavBar\": () => (/* binding */ createNavBar)\n/* harmony export */ });\n/* harmony import */ var _pageLoad__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./pageLoad */ \"./src/modules/pageLoad.js\");\n\r\n\r\nfunction createNavBar() {\r\n    const content = document.getElementById('content');\r\n    const nav = document.createElement('div');\r\n    nav.classList.add('header');\r\n\r\n    const navButtonHome = ButtonFactory('homeBtn', 'navButtons', 'Home')\r\n    const navButtonMenu = ButtonFactory('menuBtn', 'navButtons', 'Menu')\r\n    const navButtonContact = ButtonFactory('contactBtn', 'navButtons', 'Contact');\r\n\r\n    nav.appendChild(navButtonHome);\r\n    nav.appendChild(navButtonMenu);\r\n    nav.appendChild(navButtonContact);\r\n\r\n    content.appendChild(nav);\r\n}\r\n\r\nfunction ButtonFactory(id, classname, text) { \r\n    var button = document.createElement('button');\r\n    button.id = id;\r\n    button.className = classname;\r\n    button.textContent = text;\r\n    button.addEventListener('click', function() {(0,_pageLoad__WEBPACK_IMPORTED_MODULE_0__.pageLoad)(id)});\r\n    return button;\r\n    \r\n}\n\n//# sourceURL=webpack://restaurantpage/./src/modules/createNav.js?");
 
 /***/ }),
 
@@ -136,7 +146,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \*****************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"loadHomePage\": () => (/* binding */ loadHomePage)\n/* harmony export */ });\n/* harmony import */ var _pageLoad__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./pageLoad */ \"./src/modules/pageLoad.js\");\n\r\n\r\nfunction loadHomePage() {\r\n    const content = document.getElementById('content');\r\n\r\n    const home = document.createElement('div');\r\n    home.className = 'home';\r\n    home.innerHTML = `\r\n    <h1 class='title'>Home Page</h1>\r\n    <p>SOmething about the page is written here to fill up\r\n    some space and to take all the space it wants until it\r\n    pops and maybe even some more ater that. I cant decide.</p>`\r\n    content.appendChild(home);\r\n};\n\n//# sourceURL=webpack://restaurantpage/./src/modules/home.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"loadHomePage\": () => (/* binding */ loadHomePage)\n/* harmony export */ });\nfunction loadHomePage() {\r\n    const content = document.getElementById('content');\r\n    \r\n    const home = document.createElement('div');\r\n    home.className = 'home';\r\n    home.innerHTML = `\r\n    <h1 class='title'>Home Page</h1>\r\n    <p>SOmething about the page is written here to fill up\r\n    some space and to take all the space it wants until it\r\n    pops and maybe even some more ater that. I cant decide.</p>`\r\n    content.appendChild(home);\r\n};\n\n//# sourceURL=webpack://restaurantpage/./src/modules/home.js?");
+
+/***/ }),
+
+/***/ "./src/modules/menu.js":
+/*!*****************************!*\
+  !*** ./src/modules/menu.js ***!
+  \*****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"loadMenuPage\": () => (/* binding */ loadMenuPage)\n/* harmony export */ });\nfunction loadMenuPage() {\r\n    const content = document.getElementById('content');\r\n    \r\n    const menu = document.createElement('div');\r\n    menu.className = 'menu'\r\n    menu.innerHTML = `\r\n    <h1 class='title'>Menu</h1>\r\n    <ul>\r\n        <li> Sushi </li>\r\n        <li> Pizza </li>\r\n        <li> Sammys </li>\r\n        <li> Hot doggies </li>\r\n    </ul>`\r\n\r\n    \r\n    content.appendChild(menu);\r\n};\n\n//# sourceURL=webpack://restaurantpage/./src/modules/menu.js?");
 
 /***/ }),
 
@@ -146,7 +166,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \*********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"pageLoad\": () => (/* binding */ pageLoad)\n/* harmony export */ });\n\r\nfunction pageLoad(page) {\r\n    const content = document.getElementById('content');\r\n    \r\n};\r\n\n\n//# sourceURL=webpack://restaurantpage/./src/modules/pageLoad.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"pageLoad\": () => (/* binding */ pageLoad)\n/* harmony export */ });\n/* harmony import */ var _home__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./home */ \"./src/modules/home.js\");\n/* harmony import */ var _contact__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./contact */ \"./src/modules/contact.js\");\n/* harmony import */ var _menu__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./menu */ \"./src/modules/menu.js\");\n\r\n\r\n\r\n\r\nfunction pageLoad(page) {\r\n   const content =  document.getElementById('content');\r\n   content.removeChild(content.childNodes[1])\r\n    if(page == 'menuBtn') {\r\n        return (0,_menu__WEBPACK_IMPORTED_MODULE_2__.loadMenuPage)()\r\n    } else if (page == 'contactBtn') {\r\n        return (0,_contact__WEBPACK_IMPORTED_MODULE_1__.loadContactPage)()\r\n    } else {\r\n       return (0,_home__WEBPACK_IMPORTED_MODULE_0__.loadHomePage)()\r\n    }\r\n    \r\n};\r\n\n\n//# sourceURL=webpack://restaurantpage/./src/modules/pageLoad.js?");
 
 /***/ })
 
