@@ -1,29 +1,46 @@
 import './styles.css';
-import pageLoad from "./modules/pageLoad";
-import loadHomePage from "./modules/home";
-import loadContactPage from "./modules/contact";
-import loadMenuPage from "./modules/menu";
+import { pageLoad } from './modules/pageLoad';
+import { createNavBar } from './modules/createNav';
+import { loadHomePage } from './modules/home';
 
-pageLoad();
+
+createNavBar();
 loadHomePage();
 
-const content = document.getElementById('content');
-const buttons = document.querySelectorAll('.navButtons');
 
-buttons.forEach(button => button.addEventListener('click', () => {
-    content.innerHTML = '';//TODO: THis is destroying our event listeners after first click
-    pageLoad();
-    if(button.getAttribute('id') == 'homeBtn') {
-        console.log(button.getAttribute('id'))
-        loadHomePage()
-    } else if (button.getAttribute('id') == 'menuBtn') {
-        console.log(button.getAttribute('id'))
-        loadMenuPage()
-    } else {
-        console.log(button.getAttribute('id'))
-        loadContactPage()
-    }
-}))
+
+
+
+
+
+
+
+
+
+
+
+
+
+// pageLoad();
+// loadHomePage();
+
+// const content = document.getElementById('content');
+// const buttons = document.querySelectorAll('.navButtons');
+
+// buttons.forEach(button => button.addEventListener('click', () => {
+//     //content.innerHTML = '';//TODO: THis is destroying our event listeners after first click
+//     pageLoad();
+//     if(button.getAttribute('id') == 'homeBtn') {
+//         console.log(button.getAttribute('id'))
+//         loadHomePage()
+//     } else if (button.getAttribute('id') == 'menuBtn') {
+//         console.log(button.getAttribute('id'))
+//         loadMenuPage()
+//     } else {
+//         console.log(button.getAttribute('id'))
+//         loadContactPage()
+//     }
+// }))
 
 
 

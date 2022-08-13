@@ -1,4 +1,4 @@
-function loadMenuPage() {
+export function loadMenuPage() {
     const content = document.getElementById('content');
 
     const menu = document.createElement('div');
@@ -15,5 +15,3 @@ function loadMenuPage() {
     
     content.appendChild(menu);
 };
-
-export default loadMenuPage;

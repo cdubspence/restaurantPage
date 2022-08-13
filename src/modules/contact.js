@@ -1,4 +1,4 @@
-function loadContactPage() {
+export function loadContactPage() {
     const content = document.getElementById('content');
 
     const contact = document.createElement('div');
@@ -13,5 +13,3 @@ function loadContactPage() {
 
     content.appendChild(contact);
 };
-
-export default loadContactPage;

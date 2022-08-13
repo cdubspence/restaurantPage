@@ -1,6 +1,6 @@
 import pageLoad from "./pageLoad";
 
-function loadHomePage() {
+export function loadHomePage() {
     const content = document.getElementById('content');
 
     const home = document.createElement('div');
@@ -12,5 +12,3 @@ function loadHomePage() {
     pops and maybe even some more ater that. I cant decide.</p>`
     content.appendChild(home);
 };
-
-export default loadHomePage;
