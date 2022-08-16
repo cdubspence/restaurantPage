@@ -10,7 +10,7 @@ export function loadHomePage() {
     const home = document.createElement('div');
     home.className = 'home';
     home.innerHTML = `
-    <h1 class='title'>Home Page</h1>
+    <div class='homeInfo'><h1 class='title'>Designer Cuisine</h1>
     <p>But I must explain to you how all this mistaken idea of denouncing
     pleasure and praising pain was born and I will give you a complete account
     of the system, and expound the actual teachings of the great explorer of the 
@@ -27,8 +27,16 @@ export function loadHomePage() {
     pain that produces no resultant pleasure? On the other hand, we denounce 
     with righteous indignation and dislike men who are so beguiled and 
     demoralized by the charms of pleasure of the moment, so blinded by desire,
-    that they cannot foresee</p>`
-    
+    that they cannot foresee</p></div>
+    <div class='homeHours'>
+        <h2>Mon-Fri</h2>
+        <p>11am - 11pm</p>
+        <h2>Saturday</h2>
+        <p>1pm - Midnight</p>
+        <h2>Sunday & Holidays</h2>
+        <p>Closed</p>
+    </div>`
+
     content.appendChild(home); 
     
 };

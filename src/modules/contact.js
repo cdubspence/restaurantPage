@@ -11,7 +11,7 @@ export function loadContactPage() {
         <label for='nameInput'>Name</label>
     </div>
     <input type='email' placeholder='Email'>
-    Comments: <input type='textarea'>
+    Comments: <textarea placeholder='Tell us about your experience...'></textarea>
     <button>Submit</button>
     </form>`
     
