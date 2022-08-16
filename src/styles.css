@@ -47,3 +47,18 @@ body {
     text-align: center;
     grid-column: 2 / 3;
 }
+
+.contact {
+    grid-column: 2 / 3;
+
+}
+
+.menu {
+    grid-column: 2 / 3;
+    text-align: center;
+}
+
+.menu > ul {
+    list-style: none;
+    padding-left: 0;
+}
