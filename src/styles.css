@@ -50,7 +50,17 @@ body {
 
 .contact {
     grid-column: 2 / 3;
+    text-align: center;
 
+}
+form > input {
+    border-radius: 20px;
+    border: none;
+    margin-bottom: 10px;
+}
+
+.formFld {
+    position: relative;
 }
 
 .menu {
