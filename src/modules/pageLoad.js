@@ -4,7 +4,7 @@ import { loadMenuPage } from './menu';
 
 export function pageLoad(page) {
    const content =  document.getElementById('content');
-   content.removeChild(content.childNodes[1])
+   content.removeChild(content.childNodes[2])
     if(page == 'menuBtn') {
         return loadMenuPage()
     } else if (page == 'contactBtn') {

@@ -12,10 +12,20 @@ body {
     border-radius: 20px;
 }
 
+.restaurantName {
+    grid-row: 1;
+    grid-column: 1 / 4;
+    text-align: center;
+    font-size: 70px;
+    margin-bottom: 0;
+    font-family: 'Caveat';
+}
+
 .header {
     margin-right: 20px;
     margin-left: 20px;
     grid-column: 1 / 4;
+    grid-row: 2;
     display: flex;
     justify-content: right;
     align-items: center;
@@ -45,12 +55,15 @@ body {
 
 .home {
     text-align: center;
-    grid-column: 2 / 3;
+    grid-column: 1 / 4;
+    grid-row: 3;
+    margin: auto 40px auto 40px;
 }
 
 .contact {
     grid-column: 2 / 3;
     text-align: center;
+    grid-row: 3;
 
 }
 form > input {
@@ -66,6 +79,7 @@ form > input {
 .menu {
     grid-column: 2 / 3;
     text-align: center;
+    grid-row: 3;
 }
 
 .menu > ul {
