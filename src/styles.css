@@ -8,6 +8,7 @@ body {
     margin: 0 200px 20px 200px;
     background-color: steelblue;
     height: 100%;
+    min-height: 99vh;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(5, 1fr);
